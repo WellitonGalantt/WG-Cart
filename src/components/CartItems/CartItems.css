@@ -1,0 +1,123 @@
+
+.cart-items-box-todo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 440px;
+  min-width: 240px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 90px 0 0 0;
+  gap: 4px;
+  color: #f7f7f7;
+  background-color: #262C47;
+  animation: open 300ms ease;
+  overflow: auto;
+  scrollbar-width: none;
+  z-index: 1;
+}
+
+.image-items-cart{
+  max-width: 80px;
+  object-fit: contain;
+}
+
+.items-box-cart{
+  display: flex;
+  width: 90%;
+  height: 100px;
+  padding: .7rem;
+  background-color: #3a4164;
+}
+
+.description-items-cart,
+.qntd-btn-items-cart{
+  display: flex;
+  flex-direction: column;
+}
+
+.description-items-cart{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-items-cart p{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  word-break:break-all;
+  overflow: hidden;
+  font-size: 14px;
+  max-height: 90%;
+  line-height: 14px;
+  width: 100%;
+  padding: 0 10px;
+  text-transform:capitalize;
+}
+
+.qntd-btn-items-cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  float: right;
+  max-height: 90%;
+}
+
+.qntd-btn-items-cart p{
+  font-size: 14px;
+}
+
+.remove-item-cart-btn{
+  width: 100%;
+  padding: 4px 0;
+  margin: 0 auto;
+  background-color: transparent;
+  border: solid 2px #F7B176;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.remove-item-cart-btn:hover{
+  background-color: #F7B176;
+  border: solid 2px #f7f7f7;
+  color: #262C47;
+}
+
+.remove-item-cart-btn .icon{
+  pointer-events: none;
+}
+
+.resume-cart-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100px;
+  bottom: 0;
+  position: sticky;
+  z-index: 1;
+  background-color: #262C47;
+}
+.resume-cart-items p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@keyframes open {
+  0%{
+    right: -500px;
+  }
+
+  100%{
+    right: 0;
+  }
+}

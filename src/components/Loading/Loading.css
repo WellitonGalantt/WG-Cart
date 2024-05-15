@@ -1,0 +1,22 @@
+
+.load-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  color: orange;
+  font-size: 60px;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+  from{
+    transform: rotate(360deg);
+  }
+
+  to{
+    transform: rotate(0deg);
+  }
+}
